@@ -1,0 +1,35 @@
+{
+  "name": "spelwerk-service-mysql",
+  "version": "0.2.1",
+  "license": "MIT",
+  "private": true,
+  "main": "src/main/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:princejonn/spelwerk-service-mysql.git"
+  },
+  "scripts": {
+    "test": "mocha ./tests/index.js --timeout 15000 --exit",
+    "eslint": "eslint 'src/**/*.js'",
+    "upgrade": "npm-check --update",
+    "pre-push": "npm-run-all --parallel eslint test"
+  },
+  "dependencies": {
+    "husky": "^1.1.4",
+    "lodash": "^4.17.10",
+    "mysql2": "^1.6.4",
+    "spelwerk-common-errors": "git+ssh://git@bitbucket.org:princejonn/spelwerk-common-errors.git#dev",
+    "spelwerk-service-utility": "git+ssh://git@bitbucket.org:princejonn/spelwerk-service-utility.git#dev",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "npm-check": "^5.9.0",
+    "npm-run-all": "^4.1.3"
+  }
+}

@@ -1,0 +1,11 @@
+## GLOBAL
+/.idea
+/node_modules
+
+## LOGS
+/logs
+
+# MISC
+.DS_Store
+.env*
+npm-debug.log*
